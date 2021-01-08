@@ -1,0 +1,27 @@
+.myBtn {
+  position: fixed; 
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none; 
+  outline: none;
+  background-color: $bg-color;
+  color: white;
+  padding: 5px; 
+  border-radius: 10px;
+  font-size: 18px;
+  &.myBtn:hover {
+    color: lighten($fc-green, 30%) ; 
+  }
+}
+.btn-tickets {
+  @extend .myBtn;
+  position: relative;
+  border: 1px solid white;
+  bottom: 0;
+  right: 0;
+  padding: 0 10px;
+  letter-spacing: 2pt;
+  font-family: 'IM Fell English', serif;
+  font-size: 15px;
+}

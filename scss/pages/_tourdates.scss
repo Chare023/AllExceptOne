@@ -1,0 +1,19 @@
+.tourdates {
+  width: 1200px;
+  height: fit-content;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  h2 {
+    @include heading ($fc-green, $f-size)
+  }
+}
+
+.tourdates-wrap {
+  display: flex;
+  color: white;
+  text-align: center;
+  justify-content: space-between;
+  margin: 10px 100px;
+}
