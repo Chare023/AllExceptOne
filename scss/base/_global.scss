@@ -1,0 +1,26 @@
+body {   
+  background: url(/img/bg_img.jpg); 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#myBtn {
+  position: fixed; 
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none; 
+  outline: none;
+  background-color: $bg-color;
+  color: white;
+  cursor: pointer;
+  padding: 5px; 
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  
+  color: lighten($fc-green, 30%) ; 
+}
