@@ -1,0 +1,548 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    font-family: 'Cinzel', serif;
+}
+
+/*Typography */
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 14px;
+}
+
+/* Fonts */
+body {
+    font-family: 'Cinzel', serif;
+}
+
+/* Css */
+
+header {
+    max-width: 100vw;
+    background: rgba(0, 0, 0, 0.6) url(/img/gallery/126332724_10159258706391807_774258078206399605_o.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    min-height: 100vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-header {
+    max-width: 1380px;
+    width: 100%;
+    padding: 3rem 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    height: 5rem;
+}
+
+.top-header__left {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.top-header__left a {
+    color: whitesmoke;
+}
+
+.top-header__right {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.btn {
+    font-family: 'Cinzel', serif;
+    height: fit-content;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    transition: 0.5s ease;
+    cursor: pointer;
+    background-color: #97681E;
+    color: whitesmoke
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.social-icons {
+    display: inline-flex;
+    gap: 1rem;
+}
+
+.social-icons i {
+    font-size: 1.3rem;
+    color: whitesmoke;
+    transition: 0.3s ease;
+}
+
+.social-icons i:hover {
+    opacity: 0.8;
+}
+
+.header-ctn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.header-ctn h2 {
+    padding: 2rem 0 1rem;
+    text-align: center;
+}
+
+.header-ctn img {
+    height: 3rem;
+    width: fit-content;
+}
+
+
+.video-ctn {
+    text-align: center;
+    /* max-width: 80%; */
+    height: auto;
+    width: 50%;
+    height: 25vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.video-ctn img {
+    width: 100%;
+    height: 100%;
+}
+
+.video-ctn iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#headerVideo {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#playBtn {
+    position: absolute;
+    color: whitesmoke;
+    font-size: 2rem;
+}
+
+main {
+    max-width: 1380px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section {
+    margin: 8rem 0;
+}
+
+.album-cover {
+    width: 50%;
+    margin: auto;
+}
+
+.album-cover img {
+    width: 100%;
+}
+
+.album-cover h3 {
+    padding: 2rem;
+    color: #97681E
+}
+
+.btn-order {
+    width: fit-content;
+    margin: auto;
+}
+
+.video-sec h2,
+.gallery-sec h2,
+.tourdates h2 {
+    color: #bd9048;
+    padding: 1rem 0 2rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+}
+
+.video-section__boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+article:first-child {
+    width: 100%;
+}
+
+/* Gallery grid */
+
+.grid-container {
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+.cols {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.col {
+    width: 25%;
+    height: 300px;
+    float: left;
+    margin: 0;
+}
+
+.col img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.8;
+}
+
+
+.grid-1 {
+    width: 50%;
+}
+
+.grid-3 {
+    float: right;
+    height: 600px;
+}
+
+.grid-5 {
+    display: table;
+}
+
+.grid-5>* {
+    display: table-cell;
+}
+
+.grid-5>.text-container {
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.grid-5 img {
+    object-position: right;
+}
+
+.grid-7 {
+    width: 50%;
+}
+
+@supports (display: grid) or (display: -ms-grid) {
+    .grid-area {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        justify-content: center;
+    }
+
+    .col {
+        width: 100%;
+        height: 100%;
+        float: none;
+    }
+
+    .grid-1 {
+        grid-column-end: span 2;
+    }
+
+    .grid-3 {
+        grid-row-end: span 2;
+    }
+
+    .grid-5 {
+        grid-column-end: span 2;
+    }
+
+    .grid-7 {
+        grid-column-end: span 2;
+    }
+}
+
+
+
+.tourdates {
+    color: whitesmoke;
+}
+
+.tourdates h4 {
+    font-size: 1rem;
+}
+
+.tourdates-row {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 1rem 2rem;
+    box-shadow: 0 1px 6px -5px whitesmoke;
+}
+
+.tourdates-left,
+.tourdates-right {
+    display: flex;
+    width: 50%;
+    align-items: baseline;
+}
+
+.tourdates-left {
+    align-items: center;
+    gap: 1rem;
+}
+
+.tourdates-right {
+    justify-content: space-between;
+}
+
+.tourdates-right button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+}
+
+.footer {
+    max-width: 1000px;
+    color: whitesmoke;
+    display: flex;
+    padding: 3rem 1rem;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.footer ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 0.8rem;
+}
+
+.footer ul li {
+    /* padding-right: 1rem; */
+    box-shadow: 0 1px 6px -5px whitesmoke;
+}
+
+.footer ul li a {
+    color: whitesmoke;
+}
+
+/* Media queries for other screen widths */
+
+@media screen and (max-width: 1500px) {
+    .top-header {
+        padding: 4rem;
+    }
+
+    .video-ctn {
+        width: 60%;
+        height: 30vw;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .video-ctn {
+        width: 80%;
+        height: 40vw;
+    }
+
+    .video-section__boxes article:first-child {
+        width: 80%;
+        height: 45vw;
+    }
+
+    .video-section__boxes article:first-child iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .video-section__boxes article {
+        width: 25%;
+    }
+
+    .video-section__boxes article iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 920px) {
+
+    section h2,
+    h3 {
+        font-size: calc((2.8 - 1) * calc(.012 * min(100vh, 900px)) + 1rem);
+    }
+
+    h2,
+    h3 {
+        font-size: calc((1.3 - 1) * calc(.012 * min(100vh, 900px)) + 1rem);
+        /* font-size: 1.7rem; */
+    }
+
+    .btn-tickets {
+        font-size: 0.7rem !important;
+        padding: 0.4rem !important;
+    }
+
+    .top-header__right,
+    .top-header__left a {
+        display: none;
+    }
+
+    .top-header__left {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .video-section__boxes article {
+        width: 80% !important;
+        height: 45vw;
+        margin-bottom: 3rem;
+    }
+
+    .video-section__boxes article:last-child {
+        margin-bottom: 0;
+    }
+
+    .video-section__boxes article iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .tourdates h4 {
+        font-size: 0.8rem;
+    }
+
+    .album-cover {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* h2, h3 {
+        font-size: 1.4rem;
+    } */
+    .grid-2 {
+        display: none;
+    }
+
+    .tourdates h4 {
+        font-size: 0.7rem !important;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .col {
+        grid-row-end: unset;
+        grid-column-end: unset;
+        height: 250px;
+    }
+
+    .grid-area {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-3 {
+        order: -1;
+        height: 500px;
+    }
+
+    .footer ul {
+        font-size: 0.6rem;
+        gap: 1rem;
+    }
+}
