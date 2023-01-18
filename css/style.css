@@ -355,6 +355,7 @@ article:first-child {
     display: flex;
     width: 100%;
     height: fit-content;
+    gap: 1rem;
     padding: 1rem 2rem;
     box-shadow: 0 1px 6px -5px whitesmoke;
 }
@@ -364,11 +365,11 @@ article:first-child {
     display: flex;
     width: 50%;
     align-items: baseline;
+    gap: 1rem;
 }
 
 .tourdates-left {
     align-items: center;
-    gap: 1rem;
 }
 
 .tourdates-right {
@@ -452,7 +453,20 @@ article:first-child {
 
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1000px) {
+    .col {
+            width: 100%;
+        }
+    
+        .grid-area {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .grid-3 {
+            order: -1;
+            height: 500px;
+        }
 
     section h2,
     h3 {
