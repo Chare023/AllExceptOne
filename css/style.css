@@ -85,12 +85,38 @@ body {
     justify-content: space-between;
 }
 
+.header-mobile {
+    height: 100vh;
+    background-color: black;
+    z-index: 10;
+    position: fixed;
+}
+
+
 .top-header {
     max-width: 1380px;
     width: 100%;
     padding: 3rem 0;
+    gap: 2rem;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+}
+
+.header-mobile .top-header-nav {
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.header-mobile .top-header-nav .top-header__right {
+    flex-direction: column;
+    gap: 0;
+}
+
+.top-header-nav {
+    display: flex;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -112,6 +138,35 @@ body {
     display: flex;
     align-items: center;
     gap: 2.5rem;
+}
+
+.burger-box {
+    position: absolute;
+    top: 1.5rem;
+    left: 10%;
+    display: none;
+}
+
+.close .burger-bar:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 5px);
+    width: 40px;
+}
+
+.close .burger-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.close .burger-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(9px, -8px);
+    width: 40px;
+}
+
+.burger-bar {
+    width: 40px;
+    height: 3px;
+    margin: 7px;
+    background-color: white;
+    z-index: 30;
 }
 
 .btn {
@@ -376,7 +431,7 @@ article:first-child {
     justify-content: space-between;
 }
 
-.tourdates-right button {
+.tourdates-right .btn {
     padding: 0.5rem 1rem;
     font-size: 0.8rem;
 }
@@ -455,18 +510,18 @@ article:first-child {
 
 @media screen and (max-width: 1000px) {
     .col {
-            width: 100%;
-        }
-    
-        .grid-area {
-            display: flex;
-            flex-direction: column;
-        }
-    
-        .grid-3 {
-            order: -1;
-            height: 500px;
-        }
+        width: 100%;
+    }
+
+    .grid-area {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-3 {
+        order: -1;
+        height: 500px;
+    }
 
     section h2,
     h3 {
@@ -484,13 +539,17 @@ article:first-child {
         padding: 0.4rem !important;
     }
 
-    .top-header__right,
-    .top-header__left .nav-link {
+    .top-header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .top-header-nav {
         display: none;
     }
 
-    .top-header__left {
-        width: 100%;
+    .navbar-logo {
+        /* width: 100%; */
         justify-content: center;
     }
 
@@ -516,6 +575,10 @@ article:first-child {
     .album-cover {
         width: 80%;
     }
+
+    .burger-box {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -540,6 +603,11 @@ article:first-child {
 
 
 @media screen and (max-width: 450px) {
+
+    .top-header {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     .col {
         grid-row-end: unset;
@@ -575,7 +643,7 @@ article:first-child {
     color: whitesmoke;
 }
 
-.privacy .btn {
+.privacy .btn-mailing-list {
     color: #97681E;
     background-color: whitesmoke;
     font-weight: 600;
@@ -658,6 +726,6 @@ article:first-child {
 
 @media screen and (max-width: 620px) {
     .subscribe-ctn {
-        padding: 0.5rem;
+        padding: 1rem 1.5rem;
     }
 }
