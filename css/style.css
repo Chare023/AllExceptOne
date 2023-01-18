@@ -74,7 +74,7 @@ body {
 
 header {
     max-width: 100vw;
-    background: rgba(0, 0, 0, 0.6) url("/img/gallery/126332724_10159258706391807_774258078206399605_o.jpg");
+    background: rgba(0, 0, 0, 0.6) url("../img/gallery/126332724_10159258706391807_774258078206399605_o.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
